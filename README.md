@@ -82,7 +82,7 @@ $ git clone https://github.com/rafarod21/FeedWidget.git
     
 ##### Passo 2: Acessando a pasta do backend do projeto
 ```bash
-$ cd path
+$ cd FeedWidget/server
 ```
     
 ##### Passo 3: Instalando as dependências do backend com npm ou Yarn
@@ -129,7 +129,7 @@ $ yarn dev
     
 ##### Passo 7: EM OUTRO TERMINAL, acesse a pasta do frontend do projeto
 ```bash
-$ cd path
+$ cd FeedWidget/web
 ```
     
 ##### Passo 8: Instalando as dependências do frontend com npm ou Yarn
