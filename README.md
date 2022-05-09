@@ -75,8 +75,86 @@ Para o backend foi utilizado Node.js e o SQLite como banco de dados em desenvolv
 
 #### :small_blue_diamond: Na própria máquina - Passo-a-passo
     
-Em andamento :hammer_and_wrench:
+##### Passo 1: Clonando o repositório
+```bash
+$ git clone https://github.com/rafarod21/FeedWidget.git
+```
+    
+##### Passo 2: Acessando a pasta do backend do projeto
+```bash
+$ cd path
+```
+    
+##### Passo 3: Instalando as dependências do backend com npm ou Yarn
+```bash
+# Utilizando npm
+$ npm install
 
+# Utilizando Yarn
+$ yarn
+```
+
+##### Passo 4: Configurando o banco de dados local
+
+- Crie um arquivo ".env" na raiz do projeto, copie o conteúdo a seguir e cole-o dentro desse arquivo
+```bash
+DATABASE_URL="file:./dev.db"
+```
+- Dentro da pasta prisma:
+    - Delete a pasta "migrations"
+    - Delete arquivo "dev.db"
+    - Dentro do arquivo "schema.prisma", altere o valor da variável "provider" dentro de "datasource db" para "sqlite"
+    
+##### Passo 5: Executando as migrations do prisma
+```bash
+# Utilizando npm
+$ npx prisma migrate dev
+
+# Utilizando Yarn
+$ yarn prisma migrate dev
+```
+- Quando aparecer a pergunta "Enter a name for the new migration: »" digite:
+```bash
+create_feedbacks
+```
+    
+##### Passo 6: Executando o backend do projeto com npm ou Yarn
+```bash
+# Utilizando npm
+$ npm run dev
+
+# Utilizando Yarn
+$ yarn dev
+```
+    
+##### Passo 7: EM OUTRO TERMINAL, acesse a pasta do frontend do projeto
+```bash
+$ cd path
+```
+    
+##### Passo 8: Instalando as dependências do frontend com npm ou Yarn
+```bash
+# Utilizando npm
+$ npm install
+
+# Utilizando Yarn
+$ yarn
+```
+
+##### Passo 9: Executando o frontend do projeto com npm ou Yarn
+```bash
+# Utilizando npm
+$ npm run dev
+
+# Utilizando Yarn
+$ yarn dev
+  
+# O projeto deverá ser iniciado na porta 3000
+```
+
+##### Passo 10: Vizualizando o projeto
+Acesse: http://localhost:3000
+    
 ## Tecnologias :books:
 
   - [ReactJS](https://pt-br.reactjs.org)
