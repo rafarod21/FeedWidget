@@ -77,21 +77,21 @@ Para o backend foi utilizado Node.js e o SQLite como banco de dados em desenvolv
     
 ##### Passo 1: Clonando o repositório
 ```bash
-$ git clone https://github.com/rafarod21/FeedWidget.git
+git clone https://github.com/rafarod21/FeedWidget.git
 ```
     
 ##### Passo 2: Acessando a pasta do backend do projeto
 ```bash
-$ cd FeedWidget/server
+cd FeedWidget/server
 ```
     
 ##### Passo 3: Instalando as dependências do backend com npm ou Yarn
 ```bash
 # Utilizando npm
-$ npm install
+npm install
 
 # Utilizando Yarn
-$ yarn
+yarn
 ```
 
 ##### Passo 4: Configurando o banco de dados local
@@ -108,10 +108,10 @@ DATABASE_URL="file:./dev.db"
 ##### Passo 5: Executando as migrations do prisma
 ```bash
 # Utilizando npm
-$ npx prisma migrate dev
+npx prisma migrate dev
 
 # Utilizando Yarn
-$ yarn prisma migrate dev
+yarn prisma migrate dev
 ```
 - Quando aparecer a pergunta "Enter a name for the new migration: »" digite:
 ```bash
@@ -121,33 +121,33 @@ create_feedbacks
 ##### Passo 6: Executando o backend do projeto com npm ou Yarn
 ```bash
 # Utilizando npm
-$ npm run dev
+npm run dev
 
 # Utilizando Yarn
-$ yarn dev
+yarn dev
 ```
     
 ##### Passo 7: EM OUTRO TERMINAL, acesse a pasta do frontend do projeto
 ```bash
-$ cd FeedWidget/web
+cd FeedWidget/web
 ```
     
 ##### Passo 8: Instalando as dependências do frontend com npm ou Yarn
 ```bash
 # Utilizando npm
-$ npm install
+npm install
 
 # Utilizando Yarn
-$ yarn
+yarn
 ```
 
 ##### Passo 9: Executando o frontend do projeto com npm ou Yarn
 ```bash
 # Utilizando npm
-$ npm run dev
+npm run dev
 
 # Utilizando Yarn
-$ yarn dev
+yarn dev
   
 # O projeto deverá ser iniciado na porta 3000
 ```
@@ -165,7 +165,6 @@ Acesse: http://localhost:3000
   - [Vite](https://vitejs.dev)
   - [Jest](https://jestjs.io/pt-BR)
   - [Tailwind CSS](https://tailwindcss.com)
-  - [Vite](https://vitejs.dev)
     
 ## Desenvolvedores/Contribuintes :octocat:
 
